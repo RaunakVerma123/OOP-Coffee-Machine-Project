@@ -20,6 +20,7 @@ class CoffeeMaker:
             if drink.ingredients[item] > self.resources[item]:
                 print(f"Sorry there is not enough {item}.")
                 can_make = False
+                break
         return can_make
 
     def make_coffee(self, order):
